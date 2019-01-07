@@ -6,10 +6,6 @@ import '../stylesheets/App.css'
 
 class App extends Component {
 
-  onTermSubmit = () => {
-
-  }
-
   render() {
     return (
       <div className="ui raised segment">

@@ -9,17 +9,17 @@ const JobsList = (props) => {
         <tr>
           <th>
             <h3 className="ui center aligned header">
-              Title
-            </h3>
-          </th>
-          <th>
-            <h3 className="ui center aligned header">
               Company
             </h3>
           </th>
           <th>
             <h3 className="ui center aligned header">
-              Type
+              Title
+            </h3>
+          </th>
+          <th>
+            <h3 className="ui center aligned header">
+              Location
             </h3>
           </th>
           <th>
@@ -34,17 +34,7 @@ const JobsList = (props) => {
           </th>
           <th>
             <h3 className="ui center aligned header">
-              Requirements
-            </h3>
-          </th>
-          <th>
-            <h3 className="ui center aligned header">
-              Location
-            </h3>
-          </th>
-          <th>
-            <h3 className="ui center aligned header">
-              Experience
+              Apply
             </h3>
           </th>
         </tr>

@@ -7,7 +7,7 @@ const FilteredJobs = (props) => {
     <div className="ui huge fluid icon input">
       <input
         type="text"
-        placeholder={"Search for your Dream Job"}
+        placeholder={"Filter by Company or Job title"}
         onChange={props.handleChange}
         value={props.searchTerm}
       />

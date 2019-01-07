@@ -5,14 +5,19 @@ import JobList from './JobList'
 import axios from 'axios'
 
 const API = 'http://localhost:3000/api/v1/job_listings.json';
+
 class JobsContainer extends Component {
 
-  constructor(props) {
-    super(props)
-    this.state={
-      jobs: [],
-      searchTerm: ''
-    }
+  // constructor(props) {
+  //   super(props)
+  //   this.state={
+  //     jobs: [],
+  //     searchTerm: ''
+  //   }
+  // }
+  state={
+    jobs: [],
+    searchTerm: ''
   }
 
   componentDidMount() {
@@ -31,9 +36,10 @@ class JobsContainer extends Component {
 
   render() {
     let filteredJobs = this.state.jobs.filter(jobs =>
-      jobs.title.toLowerCase().includes(this.state.searchTerm.toLowerCase()) ||
-      jobs.location.toLowerCase().includes(this.state.searchTerm.toLowerCase()))
-
+      jobs.title.replace(/(<([^>]+)>)/ig,"").toLowerCase().includes(this.state.searchTerm.toLowerCase()) ||
+      jobs.company.toLowerCase().includes(this.state.searchTerm.toLowerCase()))
+      debugger
+      console.log(filteredJobs)
     return (
       <div>
         <FilteredJobs handleChange={this.handleChange} searchTerm={this.state.searchTerm}/>
