@@ -1,6 +1,6 @@
-You can view the demo video here: https://www.youtube.com/watch?v=ghBxOp9RW9c&index=3&list=PLK9iRpBu9Wuuzv-287VM4WYqUpbUiyQ6L&t=0s
-
 Project Title: Job Search 
+
+You can view the demo video here: https://www.youtube.com/watch?v=ghBxOp9RW9c&index=3&list=PLK9iRpBu9Wuuzv-287VM4WYqUpbUiyQ6L&t=0s
 
 Overview: 
 This is the frontend portion of my Job Search application built with React. The single page application will fetch all the job results from the backend on page load and showcase the job's title (currently set to only developer positions), description, location, and salary (if specified in Adzuna). The job results can be filtered by company or Job Title. 
